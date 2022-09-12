@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BasketBallCalculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="home-container">
+                <h3>HOME</h3>
+                <div>
+                    <p class="score" id="home-score">0</p>
+                </div>
+                <div>
+                    <button onclick="homeAdd1()">+1</button>
+                    <button onclick="homeAdd2()">+2</button>
+                    <button onclick="homeAdd3()">+3</button>
+                </div>
+                <button>Fouls</button>
+            </div>
+            <button id="restart" onclick="restart()">restart</button>
+            <div class="guest-container">
+                <h3>GUEST</h3>
+                <div>
+                    <p class="score" id="guest-score">0</p>
+                </div>
+                <div>
+                    <button onclick="guestAdd1()">+1</button>
+                    <button onclick="guestAdd2()">+2</button>
+                    <button onclick="guestAdd3()">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

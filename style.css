@@ -1,0 +1,111 @@
+/* CSS minimal reset  */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* styling */
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("basketballBg.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(198, 160, 160);
+    width: 70%;
+    height: 40rem;
+    /* margin: auto; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+}
+.home-container,
+.guest-container {
+    height: 75%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.score {
+    width: 10rem;
+    text-align: center;
+    color: rgb(169, 166, 166);
+    background-color: rgb(13, 4, 37);
+    font-size: 7.5rem;
+    border-radius: 1.5rem;
+}
+button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: none;
+}
+#restart {
+    font-size: 1.5rem;
+    width: 10rem;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(13, 4, 37);
+    color: rgb(205, 183, 183);
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+    .score {
+        width: 7rem;
+    }
+    .home-container,
+    .guest-container {
+        height: 65%;
+        width: 15%;
+    }
+    button {
+        width: 2rem;
+        height: 2rem;
+    }
+}
